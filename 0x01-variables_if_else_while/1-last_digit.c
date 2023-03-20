@@ -3,11 +3,8 @@
 #include <stdio.h>
 
 /**
- * main -entry point
- *
- * Description: greater than or less than or zero
- *
- * Retun: 0 (sucess)
+ * main - Entry point
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
