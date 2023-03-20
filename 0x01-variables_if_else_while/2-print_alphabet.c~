@@ -2,10 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - prints the alphabet.
+ * main - print alphabet.
  *
- *Return: always 0 (Sucess)
- */
+ * Description: lowercase
+ *
+ * Retur: 0(Sucess)
+*/
 int main(void)
 {
 	char ch[26] = "abcdefghijklmnopqrstuvwxyz";
