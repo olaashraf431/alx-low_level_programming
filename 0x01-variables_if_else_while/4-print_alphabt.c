@@ -3,24 +3,20 @@
 #include <stdio.h>
 /**
  * main - print the alphabet
- *
+ * Description: prints the alphabet in lowercase
  * Return: 0 always (Sucess)
  */
 int main(void)
 {
-	char ch[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char ch;
 
-	for (i = 0; i < 26; i++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (i != q || i != e)
-		putchar (ch[i]);
-		
-
+		if (ch != 'e' && ch != 'q')
+			putchar(ch);
 	}
-	putchar ('\n');
- 	return (0);
 
+	putchar('\n');
 
+	return (0);
 }
-
