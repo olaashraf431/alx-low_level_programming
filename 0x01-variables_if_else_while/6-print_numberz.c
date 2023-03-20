@@ -1,10 +1,10 @@
-i#include <stdlib.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /**
 * main - prints single number
-*
-*Return: 0 (Sucess)
+* Description: prints all single digit numbers of base 10 starting from 0
+* Return: 0 (Sucess)
 */
 int main(void)
 {
@@ -12,10 +12,8 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar("%d", i);
+		putchar((i % 10) + '0');
 	}
 	putchar('\n');
 	return (0);
-
-
 }
