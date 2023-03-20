@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  * Return: Always 0 (Success)
-*/
+ */
 int main(void)
 {
 	int n;
@@ -20,7 +20,7 @@ int main(void)
 	}
 	else if (i == 0)
 	{
-		printf("Last digit of %d id %d and is 0\n", n, i);
+		printf("Last digit of %d is %d and is 0\n", n, i);
 	}
 	else
 	{
@@ -28,3 +28,4 @@ int main(void)
 	}
 	return (0);
 }
+
