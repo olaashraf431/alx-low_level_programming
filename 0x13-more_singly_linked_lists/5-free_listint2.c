@@ -1,20 +1,22 @@
-#include "lists.h"
+include "lists.h"
 
 /**
- * listint_len - returns the number of elements in a linked lists
- * @h: linked list of type listint_t to traverse
- *
- * Return: number of nodes
+ * free_listint2 - frees a linked list
+ * @head: pointer to the listint_t list to be freed
  */
-size_t listint_len(const listint_t *h)
+void free_listint2(listint_t **head)
 {
-	size_t num = 0;
+	listint_t *temp;
 
-	while (h)
+	if (head == NULL)
+		return;
+
+	while (*head)
 	{
-		num++;
-		h = h->next;
+		temp = (*head)->next;
+		free(*head);
+		*head = temp;
 	}
 
-	return (num);
+	*head = NULL;
 }
